@@ -34,6 +34,7 @@ if(isset($_POST['envio'])){
     Edad: <input type="number" name="edad">
     Acepto las condiciones: <input type="checkbox" name="condiciones">
     <p> <input type="submit" name="envio" value="Enviar" /></p>
+
 </form>
 </body>
 </html>
