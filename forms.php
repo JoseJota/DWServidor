@@ -1,4 +1,8 @@
 <?php
+function vererror($errores, $dato){
+    if(isset($errores[$dato]) )
+    echo "<div style='color:red'>".$errores[$dato]."</div>";
+}
 $nombre='';
 $error=[];
 if(isset($_POST['envio'])){
@@ -27,8 +31,7 @@ if(isset($_POST['envio'])){
 <form method="POST">
     <div>Nombre: <input type="text" name="nombre" value="<?=$nombre?>" /> </div>
 
-    <?php if(isset($error['nombre']) )
-        echo "<div style='color:red'> $error[nombre]</div>";
+    <?php vererror($error,'nombre');
     ?>
     
     Edad: <input type="number" name="edad">
