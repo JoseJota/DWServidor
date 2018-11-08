@@ -14,6 +14,8 @@ if(isset($_FILES) && isset($_FILES['fichero'])){
 
 $todasPalabras = str_word_count($contenidoString, 1, 'àáãç3');
 
+rsort($todasPalabras);
+
 
 
 $frecuencia = []; 
