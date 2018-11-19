@@ -1,15 +1,16 @@
 <?php
 class Mastermind{
-
     function crearCodigo(){
-        for ($i=0; $i < 4 ; $i++) { 
-            $random[0] = rand(1,6);
-            $random[1] = rand(1,6);
-            $random[2] = rand(1,6);
-            $random[3] = rand(1,6);
+/*         for ($i=0; $i < 4 ; $i++) { 
+            $random[$i] = rand(1,6);
         }
-        return $random;
+        return $random; */
 
+        $random=range(1, 6);
+        shuffle($random);
+        $random = array_slice($random, 2);
+    
+        return $random;
     }
 }
 ?>

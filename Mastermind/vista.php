@@ -1,8 +1,9 @@
 <?php
 include 'index.php';
-for ($i=4; $i < ; $i++) { 
-    echo "<img source='bola$codigo[i]'></p>";
 
+for ($i=0; $i < 4; $i++) { 
+    echo '<img src="./img/bola'.$codigo[$i].'.png">';
 }
 
 ?>
+
